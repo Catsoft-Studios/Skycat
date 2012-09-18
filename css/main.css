@@ -1,0 +1,123 @@
+
+/** FONT **/
+
+@font-face 
+{
+    font-family: 'GraphicPixel';
+    src: url('../fonts/graphicpixel-webfont.eot');
+    src: url('../fonts/graphicpixel-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/graphicpixel-webfont.woff') format('woff'),
+         url('../fonts/graphicpixel-webfont.ttf') format('truetype'),
+         url('../fonts/graphicpixel-webfont.svg#GraphicPixelRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.gp {font-family: 'GraphicPixel', sans-serif;}
+
+/** CONSOLE **/
+
+div.console
+{
+    width: 280px;
+    height: 80px;
+    background-color: #000000;
+    border: 1px solid #000000;
+    
+    opacity: 0.50;
+    filter:  alpha(opacity=50);
+    filter:  Òalpha(opacity=50)Ó;
+    
+    position: absolute;
+    right: 10;
+    z-index: 100;
+    
+    margin: 0px;
+    padding: 10px;
+    
+    color: #FFFFFF;
+    text-align: left;
+    
+    overflow: auto;
+    display: none;
+}
+
+div.console1 { bottom: 10; }
+div.console2 { bottom: 120; }
+div.console3 { bottom: 230; }
+
+div.console-fps
+{
+    width: 280px;
+    height: 20px;
+    background-color: #000000;
+    border: 1px solid #000000;
+    
+    opacity: 0.50;
+    filter:  alpha(opacity=50);
+    filter:  Òalpha(opacity=50)Ó;
+    
+    position: absolute;
+    bottom: 340;
+    right: 10;
+    z-index: 100;
+    
+    margin: 0px;
+    padding: 10px;
+    
+    color: #FFFFFF;
+    text-align: left;
+    display: none;
+}
+
+/** BODY AND WRAPPERS **/
+
+body
+{
+    margin: 0px;
+    padding: 0px;
+    border-style: none;
+    text-align: center;
+    overflow: hidden;
+    
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+div.scenewrapper
+{
+    width: 800px;
+    height: 600px;
+    
+    background-color: #EDEDED;
+    border-style: none;
+    
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    padding: 0px;
+    text-align: center;
+}
+
+canvas.canvas
+{
+    border-style: none;
+    background-color: transparent;
+    
+    margin: auto;
+    padding: 0px;
+    image-rendering: optimizeSpeed;
+    
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+canvas1 { z-index:  1; }
+canvas2 { z-index: 10; }
+canvas3 { z-index: 20; }
+canvas4 { z-index: 60; }

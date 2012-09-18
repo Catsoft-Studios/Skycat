@@ -1,0 +1,184 @@
+
+/** BATTLE STATS AND HUD **/
+
+div.battle_hud
+{
+    position: absolute;
+    z-index: 50;
+    right: 20;
+    bottom: 15;
+    margin: 0px;
+    text-align: right;
+}
+
+div.bar
+{
+    width: 300px;
+    height: 7px;
+    
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+    background-color: #084173;
+    background-color: rgba(0,0,0,0.4);
+    border: 1px solid #000000;
+    
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+div.hp
+{
+    overflow: hidden;
+    outline: none;
+    
+    margin-left: 20px;
+    
+    text-align: right;
+    font-family: 'GraphicPixel', sans-serif;
+    color: #FFFFFF;
+    text-shadow: -1px 0 #084173, 0 1px #084173, 1px 0 #084173, 0 -1px #084173;
+    font-size: 18px;
+}
+
+div.hp_bar
+{
+    width: 300px;
+    height: 7px;
+    
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    
+    background:-moz-linear-gradient(top, #61A6F0, #1371C3); /* Firefox */
+    background:-webkit-linear-gradient(top, #61A6F0, #1371C3); /* Safari, Chrome */
+    background:-o-linear-gradient(top, #61A6F0, #1371C3); /* Opera */
+    background:-ms-linear-gradient(top, #61A6F0, #1371C3); /* IE */
+    background:linear-gradient(top, #61A6F0, #1371C3); /* W3C Standard */
+}
+
+div.at
+{
+    overflow: hidden;
+    outline: none;
+    
+    margin-left: 20px;
+    margin-top: 20px;
+    
+    text-align: right;
+    font-family: 'GraphicPixel', sans-serif;
+    color: #FFFFFF;
+    text-shadow: -1px 0 #084173, 0 1px #084173, 1px 0 #084173, 0 -1px #084173;
+    font-size: 20px;
+}
+
+div.at_bar
+{
+    width: 300px;
+    height: 7px;
+    
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    
+    background:-moz-linear-gradient(top, #FCDA5C, #B69827); /* Firefox */
+    background:-webkit-linear-gradient(top, #FCDA5C, #B69827); /* Safari, Chrome */
+    background:-o-linear-gradient(top, #FCDA5C, #B69827); /* Opera */
+    background:-ms-linear-gradient(top, #FCDA5C, #B69827); /* IE */
+    background:linear-gradient(top, #FCDA5C, #B69827); /* W3C Standard */
+}
+
+/** BATTLE MENU **/
+
+div.battle_menu
+{
+    border: 2px solid #C3F1FF;
+    background-color: #FFFFFF;
+    
+    -moz-box-shadow: 0px 0px 20px 0px #000000, inset 0 0 7px #000000;
+    -webkit-box-shadow: 0px 0px 20px 0px #000000, inset 0 0 7px #000000;
+    box-shadow: 0px 0px 20px 0px #000000, inset 0 0 7px #000000;
+    
+    background:-moz-linear-gradient(top, #0094CF, #0C2C5B); /* Firefox */
+    background:-webkit-linear-gradient(top, #0094CF, #0C2C5B); /* Safari, Chrome */
+    background:-o-linear-gradient(top, #0094CF, #0C2C5B); /* Opera */
+    background:-ms-linear-gradient(top, #0094CF, #0C2C5B); /* IE */
+    background:linear-gradient(top, #0094CF, #0C2C5B); /* W3C Standard */
+    
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    
+    position: absolute;
+    z-index: 50;
+    left: 15;
+    bottom: 15;
+    margin: 0px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    
+    overflow: hidden;
+    outline: none;
+    display: none;
+    
+    text-align: left;
+    font-family: 'GraphicPixel', sans-serif;
+    color: #FCDA5C;
+    text-shadow: -1px 0 #084173, 0 1px #084173, 1px 0 #084173, 0 -1px #084173;
+    font-size: 14px;
+}
+
+div.battle_item
+{
+    padding: 2px;
+    padding-left: 10px;
+    margin: 3px;
+    
+    cursor: pointer;
+    text-align: left;
+    font-family: 'GraphicPixel', sans-serif;
+    color: #FFFFFF;
+    text-shadow: -1px 0 #084173, 0 1px #084173, 1px 0 #084173, 0 -1px #084173;
+    font-size: 18px;
+    
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+div.battle_active
+{
+    background-color: #084173;
+    background-color: rgba(0,0,0,0.4);
+}
+
+/** BATTLE TIME **/
+
+div.battle_timefreeze
+{
+    width: 100%;
+    height: 100%;
+    
+    margin: 0px;
+    padding: 0px;
+    
+    background-color: rgba(0,0,0,0);
+    background-image: -moz-radial-gradient(50% 50%, circle cover, rgba(0,0,0,0), rgba(0,0,0,0.7) 100%);
+    background-image: -webkit-radial-gradient(50% 50%, circle cover, rgba(0,0,0,0), rgba(0,0,0,0.7) 100%);
+    background-image: -o-radial-gradient(50% 50%, circle cover, rgba(0,0,0,0), rgba(0,0,0,0.7) 100%);
+    background-image: -ms-radial-gradient(50% 50%, circle cover, rgba(0,0,0,0), rgba(0,0,0,0.7) 100%);
+    background-image: radial-gradient(50% 50%, circle cover, rgba(0,0,0,0), rgba(0,0,0,0.7) 100%);
+    
+    border-style: none;
+    display: none;
+    
+    position: absolute;
+    z-index: 40;
+    left: 0;
+    top: 0;
+}
