@@ -1,4 +1,3 @@
-
 SKYCAT ENGINE
 =============
 
@@ -82,6 +81,8 @@ Even though we use a very flexible and customizable software to generate the map
 compounded maps, we have defined some rules to make the importation of the maps easier to
 implement.
 
+Maps can be created using the open source tool Tileditor [mapeditor.org][3].
+
 The tileset will have 7 and only 7 layers:
 
 	+------------------+------------------------------------------------------------------------------+
@@ -144,3 +145,4 @@ blocked, then if the user presses down, the player will walk through the last bl
 
 [1]: http://catsoft-studios.com
 [2]: mailto:catsoft.studios@gmail.com
+[3]: http://mapeditor.org
