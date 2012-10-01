@@ -36,33 +36,16 @@ of an object and references the rest of the instances that compound an object.
 
 Some of the most important classes are:
 
-	+------------------+------------------------------------------------------------------------------+
-	| GameObject:      | Base Game class. Provides methods to access the rest of the objects.         |
-	+------------------+------------------------------------------------------------------------------+
-	| GameCore         | The main class. Every frame the GameCore calls all necessary methods to      |
-	|                  | update the game state. References almost all objects of the scene.           |
-	+------------------+------------------------------------------------------------------------------+
-	| Camera           | Stores information about the aspect of the viewport and where it is located  |
-	|                  | relative to the map.                                                         |
-	+------------------+------------------------------------------------------------------------------+
-	| Map              | Stores information about the tilesets used and also the dimensions of the    |
-	|                  | navigation terrain.                                                          |
-	+------------------+------------------------------------------------------------------------------+
-	| Clock            | Responsible for everything related to timing. From keeping frames at a       |
-	|                  | certain rate to managing sprite's animations.                                |
-	+------------------+------------------------------------------------------------------------------+
-	| Input            | Responsible of converting input to events.                                   |
-	+------------------+------------------------------------------------------------------------------+
-	| Canvas           | Provides drawing methods and delegates whether an object is painted in an    |
-	|                  | upper or lower layer.                                                        |
-	+------------------+------------------------------------------------------------------------------+
-	| Transform        | Handles map positioning.                                                     |
-	+------------------+------------------------------------------------------------------------------+
-	| Renderer         | All objects that have an instance of this class will be rendered with its    |
-	|                  | defined properties.                                                          |
-	+------------------+------------------------------------------------------------------------------+
-	| ...              | ... and more                                                                 |
-	+------------------+------------------------------------------------------------------------------+
+* GameObject: Base Game class. Provides methods to access the rest of the objects.
+* GameCore: The main class. Every frame the GameCore calls all necessary methods to update the game state. References almost all objects of the scene.
+* Camera: Stores information about the aspect of the viewport and where it is located relative to the map.
+* Map: Stores information about the tilesets used and also the dimensions of the navigation terrain.
+* Clock: Responsible for everything related to timing. From keeping frames at a certain rate to managing sprite's animations.
+* Input: Responsible of converting input to events.
+* Canvas: Provides drawing methods and delegates whether an object is painted in an upper or lower layer.
+* Transform: Handles map positioning.
+* Renderer: All objects that have an instance of this class will be rendered with its defined properties.
+* ... and more
 
 To access to an instance of a class (for example, the map) you should first check whether the
 map instance exists or not and then access it:
