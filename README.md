@@ -68,29 +68,13 @@ Maps can be created using the open source tool Tileditor [mapeditor.org][3].
 
 The tileset will have 7 and only 7 layers:
 
-	+------------------+------------------------------------------------------------------------------+
-	| NUM: LAYER NAME  | DESCRIPTION                                                                  |
-	+------------------+------------------------------------------------------------------------------+
-	| 0: Collision     | Marked with nothing when the player can pass through and with any value if   |
-	|                  | the player cannot cross it.                                                  |
-	+------------------+------------------------------------------------------------------------------+
-	| 1: Background1   | Tiles of the background (behind the player). They will be static because     |
-	|                  | they will only be rendered one time.                                         |
-	+------------------+------------------------------------------------------------------------------+
-	| 2: Background2   | Tiles of the background (behind the player). They will be static because     |
-	|                  | they will only be rendered one time.                                         |
-	+------------------+------------------------------------------------------------------------------+
-	| 3: Background3   | Tiles of the background (behind the player). They will be static because     |
-	|                  | they will only be rendered one time.                                         |
-	+------------------+------------------------------------------------------------------------------+
-	| 4: Charsets      | The player, enemies and every movable object will be rendered here.          |
-	+------------------+------------------------------------------------------------------------------+
-	| 5: Foreground1   | The same as background but here will only be rendered objects that should    |
-	|                  | be displayed over the rest of the objects.                                   |
-	+------------------+------------------------------------------------------------------------------+
-	| 6: Foreground2   | The same as background but here will only be rendered objects that should    |
-	|                  | be displayed over the rest of the objects.                                   |
-	+------------------+------------------------------------------------------------------------------+
+* Collision: Marked with nothing when the player can pass through and with any value if the player cannot cross it.
+* Background1: Tiles of the background (behind the player). They will be static because they will only be rendered one time.
+* Background2: Tiles of the background (behind the player). They will be static because they will only be rendered one time.
+* Background3: Tiles of the background (behind the player). They will be static because they will only be rendered one time.
+* Charsets: The player, enemies and every movable object will be rendered here.
+* Foreground1: The same as background but here will only be rendered objects that should be displayed over the rest of the objects.
+* Foreground2: The same as background but here will only be rendered objects that should be displayed over the rest of the objects.
 
 `IMPORTANT` A tileset is packed in a JSON file where the name of the image [is the name of the 
 tile and its location inside the resources folder]
